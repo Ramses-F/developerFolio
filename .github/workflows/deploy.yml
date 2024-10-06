@@ -2,9 +2,9 @@ name: Build and Deploy
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by GitHub Actions
   USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
+  MEDIUM_USERNAME: "saadpasta" # Change this to your Medium username
 on:
   workflow_dispatch:
   push:
@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          persist-credentials: false # Ensure credentials are not persisted for deployment to work correctly
 
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v3.8.1
@@ -33,9 +33,11 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+
+          - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }} # Change from GITHUB_TOKEN to token
+            BRANCH: gh-pages # The branch the action should deploy to.
+            FOLDER: build # The folder the action should deploy.
+        
