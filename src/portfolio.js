@@ -48,7 +48,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "Ce que je fais",
   subTitle: "Développeur Full Stack audacieux qui souhaite explorer toutes les technologies possibles.",
   skills: [
     emoji(
@@ -111,6 +111,22 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database" // FontAwesome does not have a specific icon for MongoDB, so using the generic database icon
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "MySQL",
+      fontAwesomeClassname: "fas fa-database" // Similar to MongoDB, using the database icon for MySQL
+    },
+    {
+      skillName: "WordPress",
+      fontAwesomeClassname: "fab fa-wordpress"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -125,20 +141,26 @@ const educationInfo = {
       schoolName: "UNIVERSITE DE PERPIGNAN VIA DOMITIA",
       logo: require("./assets/images/UPVD.png"),
       subHeader: "LICENCE INFORMATIQUE",
-      duration: "September 2024 A CE JOUR",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      duration: "September 2024 - Present",
+      desc: "Actuellement, je prépare une licence en informatique, axé sur le développement de logiciels et l'analyse de données. Je participe activement à des projets de recherche collaborative.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+         "Développement d'algorithmes pour optimiser les tâches de traitement de données ",
+       "Participation à des projets de développement de logiciels utilisant Java et React",
+        "Contribution à la publication de trois articles de recherche sur la science des données",
       ]
     },
+    
     {
       schoolName: "ECOLE SUPERIEUR D'AFRIQUE DES TECHNOLOGIES DE L'INFORMATION ET DE LA COMMUNICATION",
       logo: require("./assets/images/esatic.png"),
-      subHeader: "LICENCE RESEAUX SECURITE INFORMATIQUE",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      subHeader: "LICENCE RÉSEAUX SÉCURITÉ INFORMATIQUE",
+      duration: "September 2020 - April 2023",
+      desc: "Graduated in the top 10% of the program. Focused on Software Engineering, Web Security, Operating Systems, and Network Administration.",
+      descBullets: [
+        "Développement de compétences en configuration réseau et protocoles de sécurité",
+       "Mise en place de canaux de communication sécurisés pour les applications Web",
+       " Réalisation d'un projet de fin d'études sur l'amélioration des mesures de cybersécurité dans les réseaux locaux"
+      ]
     }
   ]
 };
