@@ -392,7 +392,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Moi ☎️"),
+  title: emoji("Contactez Moi ☎️"),
   subtitle:
     "Discutez d'un projet.",
   number: "+33-0758181149",
