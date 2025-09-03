@@ -73,60 +73,72 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "tailwind css",
+      fontAwesomeClassname: "fab fa-css3-alt" // Tailwind n'a pas d'icône FontAwesome officielle, on utilise CSS3
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
+      skillName: "typescript",
+      fontAwesomeClassname: "fab fa-js" // Utilise l'icône JS pour TypeScript
+    },
+    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "next js",
+      fontAwesomeClassname: "fab fa-react" // Utilise l'icône React pour Next.js
     },
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "C",
+      fontAwesomeClassname: "fas fa-code" // Utilise une icône générique
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code" // Utilise une icône générique
     },
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
       skillName: "MongoDB",
-      fontAwesomeClassname: "fas fa-database" // FontAwesome does not have a specific icon for MongoDB, so using the generic database icon
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "MySQL",
-      fontAwesomeClassname: "fas fa-database" // Similar to MongoDB, using the database icon for MySQL
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "WordPress",
       fontAwesomeClassname: "fab fa-wordpress"
+    },
+    {
+      skillName: "flutter",
+      fontAwesomeClassname: "fab fa-google" // Utilise l'icône Google pour Flutter
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "bash",
+      fontAwesomeClassname: "fas fa-terminal" // Utilise une icône terminal pour Bash
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -141,7 +153,7 @@ const educationInfo = {
       schoolName: "UNIVERSITE DE PERPIGNAN VIA DOMITIA",
       logo: require("./assets/images/UPVD.png"),
       subHeader: "LICENCE INFORMATIQUE",
-      duration: "September 2024 - Present",
+      duration: "September 2025 - Present",
       desc: "Actuellement, je prépare une licence en informatique, axé sur le développement de logiciels et l'analyse de données. Je participe activement à des projets de recherche collaborative.",
       descBullets: [
          "Développement d'algorithmes pour optimiser les tâches de traitement de données ",
@@ -194,38 +206,25 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Developpeur fullstack",
+      company: "Xnova",
+      companylogo: require("./assets/images/logo-dark.png"),
+      date: "Juillet 2023 – 2024",
+      desc: "Développement d'applications web à grande échelle et gestion de projets innovants au sein de Xnova.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Optimisation des performances des interfaces utilisateur",
+        "Collaboration avec des équipes sur des projets open source",
+        "Création de solution digitale pour palier à des problèmes"
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+// Your Open Source Section to View Your Github Pinned Projects
+// Pour savoir comment obtenir la clé Github, consultez le fichier readme.md
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
@@ -235,95 +234,127 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Grands Projets",
+  subtitle: "Quelques réalisations concrètes dans le développement web et mobile",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/safebox.png"), // Remplacer par le logo SafeBox si disponible
+      projectName: "SafeBox",
+      projectDesc: "Gestionnaire de mots de passe sécurisé pour protéger et organiser vos identifiants en toute simplicité.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Voir le projet",
+          url: "https://safe-box-seven.vercel.app/" // Ajouter le lien si disponible
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/nextuLogo.webp"), // Remplacer par le logo liahome si disponible
+      projectName: "liahome",
+      projectDesc: "Site web moderne pour une agence immobilière, avec gestion des annonces et prise de contact en ligne.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Voir le site",
+          url: "https://liahomeci.com/" // Ajouter le lien si disponible
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/logo-giga.jpg"), // Remplacer par le logo GigaPlus si disponible
+      projectName: "GigaPlus",
+      projectDesc: "Application mobile permettant aux utilisateurs d'obtenir des pass internet en regardant des vidéos publicitaires.",
+      footerLink: [
+        {
+          name: "Voir l'application",
+          url: "https://www.gigaplus.fr/" // Ajouter le lien si disponible
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/logor.png"), // Remplacer par le logo payemacaution si disponible
+      projectName: "payemacaution",
+      projectDesc: "Site web pour la startup xnova, permettant aux usagers de payer leur caution locative en ligne.",
+      footerLink: [
+        {
+          name: "Voir le site",
+          url: "https://xnova-ci.com/paye_ma_caution" // Ajouter le lien si disponible
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/logo-1.png"), // Remplacer par le logo b-homesarl si disponible
+      projectName: "b-homesarl",
+      projectDesc: "Site web professionnel pour une agence immobilière, gestion des biens et interface utilisateur intuitive.",
+      footerLink: [
+        {
+          name: "Voir le site",
+          url: "https://b-homesarl.com/" // Ajouter le lien si disponible
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications et Réalisations 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications, lettres de recommandation et distinctions obtenues !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Finaliste Google Code-In",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Premier ivoirien sélectionné comme finaliste Google Code-in parmi 4000 étudiants de 77 pays.",
       image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      imageAlt: "Logo Google Code-In",
       footerLink: [
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
         },
         {
-          name: "Award Letter",
+          name: "Lettre de distinction",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
         },
         {
-          name: "Google Code-in Blog",
+          name: "Blog Google Code-in",
           url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Action Google Assistant",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Développement d'une action Google Assistant JavaScript Guru disponible sur 2 milliards d'appareils.",
       image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      imageAlt: "Logo Google Assistant Action",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Voir l'action Google Assistant",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=fr"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "Développeur PWA Web App",
+      subtitle: "Certification obtenue pour le développement d'applications PWA",
       image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      imageAlt: "Logo PWA",
       footerLink: [
         {name: "Certification", url: ""},
         {
-          name: "Final Project",
+          name: "Projet final",
           url: "https://pakistan-olx-1.firebaseapp.com/"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
@@ -332,13 +363,13 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "Avec l'amour du développement de trucs sympas, j'aime écrire et enseigner aux autres ce que j'ai appris.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "true",
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      title: "Gagnez un T-shirt Google Assistant et 200$ de crédits Google Cloud",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Découvrez comment gagner 200$ et un T-shirt Google Assistant en créant une action en moins de 30 minutes !"
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
@@ -347,48 +378,44 @@ const blogSection = {
         "React est une bibliothèque JavaScript permettant de créer des interfaces utilisateur. Elle est gérée par Facebook et une communauté de développeurs individuels et d'entreprises."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Conférences",
   subtitle: emoji(
-    "J'ADORE PARTAGER MES CONNAISSANCES LIMITÉES ET OBTENIR UN BADGE DE CONFÉRENCIER 😅"
+    "J'adore partager mes connaissances et intervenir lors d'événements tech 😅"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title: "Créer des actions pour Google Assistant",
+      subtitle: "Atelier au GDG DevFest Karachi 2019",
       slides_url: "https://bit.ly/saadpasta-slides",
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
+  title: emoji("Chaîne YouTube 🎥"),
+  subtitle: "Je parle de cybersécurité et partage des conseils sur ma chaîne YouTube.",
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    "https://www.youtube.com/@UnJourUneFaille"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  title: "CV",
+  subtitle: "Téléchargez mon CV en PDF",
+  display: true
 };
 
 const contactInfo = {

@@ -48,7 +48,7 @@ function Header() {
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Experiences</a>
+              <a href="#experience">Expériences</a>
             </li>
           )}
           {viewOpenSource && (
@@ -58,7 +58,7 @@ function Header() {
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Réalisations</a>
             </li>
           )}
           {viewBlog && (
@@ -68,17 +68,16 @@ function Header() {
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">A propos de moi</a>
+              <a href="#talks">À propos de moi</a>
             </li>
           )}
-          
           <li>
             <a href="#contact">Contact</a>
           </li>
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
+            {/* Ajout d'une animation de survol et d'un focus pour l'accessibilité */}
+            <a style={{transition: 'background 0.3s', outline: 'none'}} onFocus={e => e.target.style.background = '#ececec'} onBlur={e => e.target.style.background = ''} onMouseOver={e => e.target.style.background = '#ececec'} onMouseOut={e => e.target.style.background = ''}>
+              {/* ...bouton custom... */}
             </a>
           </li>
         </ul>
